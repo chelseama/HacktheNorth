@@ -72,10 +72,10 @@ def highlight_faces(image, faces, output_filename):
 		box = [(v.get('x', 0.0), v.get('y', 0.0)) for v in face['fdBoundingPoly']['vertices']]
 		fill = '#00ff00'
 
-		print face['joyLikelihood']
-		print face['surpriseLikelihood']
-		print face['sorrowLikelihood']
-		print face['angerLikelihood']
+		print (face['joyLikelihood'])
+		print (face['surpriseLikelihood'])
+		print (face['sorrowLikelihood'])
+		print (face['angerLikelihood'])
 		
 
 		if face['joyLikelihood'] == 'VERY_LIKELY' or face['joyLikelihood'] == 'LIKELY' or face['joyLikelihood'] == 'POSSIBLE':
