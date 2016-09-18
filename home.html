@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+ 
+    
+    <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="emoticonceal.css"/>
+    <meta name="x-stylesheet-fallback-test" content="" class="sr-only" /><script>!function(a,b,c){var d,e=document,f=e.getElementsByTagName("SCRIPT"),g=f[f.length-1].previousElementSibling,h=e.defaultView&&e.defaultView.getComputedStyle?e.defaultView.getComputedStyle(g):g.currentStyle;if(h&&h[a]!==b)for(d=0;d<c.length;d++)e.write('<link rel="stylesheet" href="'+c[d]+'"/>')}("position","absolute",["\/lib\/bootstrap\/dist\/css\/bootstrap.min.css"]);</script>
+    
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="/fonts/stylesheet.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/site.css" />
+</head>
+
+<body>
+
+    <div class="body-content">
+        
+<div id="home-container">
+    <div class="row">
+        <div class="col-md-12">
+
+            <form enctype="multipart/form-data" id="upload-form" action="/Home/Result" method="post">
+
+                <h1>How <select class="" id="Emotion" name="Emotion">
+                    <option value="anger">Angry</option>
+                    <option value="contempt">Contemptuous</option>
+                    <option value="disgust">Disgusted</option>
+                    <option value="fear">Fearful</option>
+                    <option selected="selected" value="happiness">Happy</option>
+                    <option value="neutral">Neutral</option>
+                    <option value="sadness">Sad</option>
+                    <option value="surprise">Surprised</option>
+                </select> Are You?</h1>
+
+                <p class="lead" id="intro-text">Upload a photo with human faces in and see who is the happiest.</p>
+
+                <div id="upload-form-inputs">
+
+                    <div class="form-group" id="form-file-input">
+                        <div class="input-group">
+                            <span class="input-group-btn">
+                                <div class="btn btn-default btn-file" style="width:100%">
+                                    Browse <input type="file" name="file" id="file" class="form-control input-lg">
+                                </div>
+                            </span>
+                            <!--<input type="text" class="form-control" readonly>-->
+                        </div>
+                    </div>
+
+                    <div class="form-group" id="form-submit-button">
+                        <button type="button" class="btn btn-primary btn-lg btn-block" id="upload-button"><i class="fa fa-upload"></i> Upload</button>
+                    </div>
+
+                </div>
+
+            <input name="__RequestVerificationToken" type="hidden" value="CfDJ8I28YdQPo_hHhcADIZo4tV93MrMiWdehNQO1FA9bi1YKWCHtoIxWGH4p1gwM-9BSMgKRSnCttKgl51B6YcjEEjfsfBfaoqpsECJdaxsw5Y4r4IqJptuh_VLmBkD4Q_LystAeZVydJ96vHWdh_5hyGDs" /></form>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div id="resultDetails"></div>
+            <div id="result"></div>
+        </div>
+    </div>
+</div>
+
+
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            
+        </div>
+    </footer>
+
+    
+    
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.1.4.min.js">
+        </script>
+<script>(window.jQuery||document.write("<script src=\"\/lib\/jquery\/dist\/jquery.min.js\"><\/script>"));</script>
+        <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/bootstrap.min.js">
+        </script>
+<script>(window.jQuery && window.jQuery.fn && window.jQuery.fn.modal||document.write("<script src=\"\/lib\/bootstrap\/dist\/js\/bootstrap.min.js\"><\/script>"));</script>
+    
+
+    
+    <script src="/js/site.min.js?v=iW5y6aQZybrnPUkAhzNzGwcldVx3ZZH-Z2_6YUi_dzw"></script>
+
+</body>
+</html>
+
